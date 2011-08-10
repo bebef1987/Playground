@@ -1,7 +1,7 @@
-Wiki Tests
+AMO Tests
 ==========
 
-Automated tests for the Wiki website.
+Automated tests for the AMO website.
 
 Running Tests
 -------------
