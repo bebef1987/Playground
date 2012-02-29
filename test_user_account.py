@@ -69,6 +69,10 @@ class TestUserAccounts:
         addons_login_page.login(credentials['email'], credentials['password'])
         Assert.true(home.header.is_user_logged_in)
   teststsd
+<<<<<<< HEAD
   gfjfgjf
+=======
+  
+>>>>>>> origin/master
   
   test 3 
