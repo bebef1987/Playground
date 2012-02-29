@@ -55,3 +55,17 @@ class TestUserAccounts:
 
         addons_login_page.login(credentials['email'], credentials['password'])
         Assert.true(home.header.is_user_logged_in)
+	    def test_user_login(self, testsetup):
+        home= home_page.HomePage(testsetup)
+        home.go_to_home_page()
+        credentials = home.credentials_of_user('default')
+
+        Assert.false(home.header.is_user_logged_in)
+        
+
+        home.header.click_login()
+        addons_login_page = addons_user_page.AddonsLoginPage(testsetup)
+
+        addons_login_page.login(credentials['email'], credentials['password'])
+        Assert.true(home.header.is_user_logged_in)
+
